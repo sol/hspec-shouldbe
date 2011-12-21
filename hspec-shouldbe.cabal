@@ -1,0 +1,16 @@
+name:             hspec-shouldbe
+synopsis:         Convenience wrapper and utilities for hspec
+version:          0.0.0
+stability:        experimental
+license:          MIT
+license-file:     LICENSE
+copyright:        (c) 2011 Simon Hengel
+author:           Simon Hengel
+maintainer:       Simon Hengel <sol@typeful.net>
+build-type:       Simple
+cabal-version:    >= 1.6
+
+library
+  build-depends:  base >= 4, HUnit, hspec
+  hs-source-dirs: src
+  exposed-modules: Test.Hspec.ShouldBe
