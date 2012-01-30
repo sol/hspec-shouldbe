@@ -1,10 +1,11 @@
-{-# OPTIONS_GHC -fno-warn-missing-signatures #-}
 module Spec (main, spec) where
 
 import           Test.Hspec.ShouldBe
 
-main = hspec spec
+main :: IO ()
+main = hspecX spec
 
+spec :: Specs
 spec = do
 
   describe "reverse" $ do
