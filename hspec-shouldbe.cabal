@@ -17,6 +17,6 @@ library
       src
   build-depends:
       hspec
-    , test-util
+    , test-shouldbe
   exposed-modules:
       Test.Hspec.ShouldBe
