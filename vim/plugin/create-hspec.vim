@@ -16,8 +16,21 @@ function s:CreateSpecTemplate()
 
     " adapt module name
     0
-    execute 's/\<Spec\>/' . expand("%:t:r")
+    execute 's/\<Spec\>/' . s:GetModuleName()
 
     " place cursor on first describe
     /describe
+endfunction
+
+" guess module name from file name
+function s:GetModuleName()
+
+    " strip extension
+    let m = expand("%:r")
+
+    " strip any none-uppercase prefix
+    let m = substitute(m, '^\U*', '', '')
+
+    " replace / with .
+    return substitute(m, "/", ".", "g")
 endfunction
