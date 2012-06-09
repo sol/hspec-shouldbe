@@ -5,7 +5,7 @@ import           Test.Hspec.ShouldBe
 main :: IO ()
 main = hspecX spec
 
-spec :: Specs
+spec :: Spec
 spec = do
 
   describe "reverse" $ do
