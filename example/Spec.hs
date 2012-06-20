@@ -3,7 +3,7 @@ module Spec (main, spec) where
 import           Test.Hspec.ShouldBe
 
 main :: IO ()
-main = hspecX spec
+main = hspec spec
 
 spec :: Spec
 spec = do
