@@ -21,6 +21,6 @@ library
       src
   build-depends:
       hspec
-    , test-shouldbe
+    , hspec-expectations
   exposed-modules:
       Test.Hspec.ShouldBe
