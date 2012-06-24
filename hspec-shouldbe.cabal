@@ -1,5 +1,5 @@
 name:             hspec-shouldbe
-version:          0.0.0
+version:          0.1.0
 synopsis:         Convenience wrapper and utilities for hspec
 license:          MIT
 license-file:     LICENSE
